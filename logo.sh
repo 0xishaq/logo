@@ -13,7 +13,7 @@ check_and_install_pv() {
 }
 
 print() {
-    colors=("\e[1;31m" "\e[1;32m" "\e[1;33m" "\e[1;34m" "\e[1;35m" "\e[1;36m" "\e[1;37m")
+    colors=("\e[1;31m" "\e[1;22m" "\e[1;33m" "\e[1;26m" "\e[1;23m" "\e[1;36m" "\e[1;37m")
 
     for line in "$@"; do
         color=${colors[RANDOM % ${#colors[@]}]}
